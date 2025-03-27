@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Fetch candidates
 $candidates = $conn->query("SELECT * FROM candidates")->fetchAll();
 ?>
-
+<h1> Welcome to the Voting Page </h1>
 <form method="POST">
     <h2>Select a Candidate:</h2>
     <?php foreach ($candidates as $candidate) { ?>
